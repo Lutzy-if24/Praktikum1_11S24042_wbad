@@ -2,86 +2,77 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Daftar Akun</title>
+<title>Form Daftar Akun</title>
 </head>
 <body>
 
-  <form action="#" method="post">
-    <fieldset>
-      <legend>Daftar Akun</legend>
+<form action="#" method="post">
+  <fieldset>
+    <legend>Daftar Akun</legend>
 
-      <p>
-        <label>Nama Lengkap:</label>
-        <input type="text" name="nama_lengkap">
-      </p>
+    <p>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama">
+    </p>
 
-      <hr>
+    <p>
+      Jenis Kelamin:
+      <input type="radio" id="laki" name="kelamin" value="Laki-Laki">
+      <label for="laki">Laki-Laki</label>
+      <input type="radio" id="perempuan" name="kelamin" value="Perempuan">
+      <label for="perempuan">Perempuan</label>
+    </p>
 
-      <p>
-        Jenis Kelamin:
-        <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-Laki
-        <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
-      </p>
+    <p>
+      <label for="tempat_lahir">Tempat Lahir:</label>
+      <input type="text" id="tempat_lahir" name="tempat_lahir">
+    </p>
 
-      <hr>
+    <p>
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+    </p>
 
-      <p>
-        <label>Tempat Lahir:</label>
-        <input type="text" name="tempat_lahir">
-      </p>
+    <p>
+      <label for="agama">Agama:</label>
+      <select id="agama" name="agama">
+        <option value="">--- Pilih Agama ---</option>
+        <option value="Islam">Islam</option>
+        <option value="Katolik">Katolik</option>
+        <option value="Protestan">Protestan</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Konghucu">Konghucu</option>
+      </select>
+    </p>
 
-      <hr>
+    <p>
+      Hobi:
+      <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+      <label for="olahraga">Olahraga</label>
+      <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+      <label for="membaca">Membaca</label>
+      <input type="checkbox" id="ngoding" name="hobi" value="Ngoding">
+      <label for="ngoding">Ngoding</label>
+    </p>
 
-      <p>
-        <label>Tanggal Lahir:</label>
-        <input type="date" name="tanggal_lahir">
-      </p>
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </p>
 
-      <hr>
+    <p>
+      <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju">
+      <label for="persetujuan">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+    </p>
 
-      <p>
-        <label>Agama:</label>
-        <select name="agama">
-          <option value="">--- Pilih Agama ---</option>
-          <option value="islam">Islam</option>
-          <option value="katolik">Katolik</option>
-          <option value="protestan">Protestan</option>
-          <option value="hindu">Hindu</option>
-          <option value="buddha">Buddha</option>
-          <option value="konghucu">Konghucu</option>
-        </select>
-      </p>
+    <p>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </p>
 
-      <hr>
-
-      <p>
-        Hobi:
-        <input type="checkbox" name="hobi" value="olahraga"> Olahraga
-        <input type="checkbox" name="hobi" value="membaca"> Membaca
-        <input type="checkbox" name="hobi" value="ngoding"> Ngoding
-      </p>
-
-      <hr>
-
-      <p>
-        <label>Password:</label>
-        <input type="password" name="password">
-      </p>
-
-      <hr>
-
-      <p>
-        <input type="checkbox" name="persetujuan" value="setuju">
-        Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
-      </p>
-
-      <p>
-        <input type="reset" value="Reset">
-        <input type="submit" value="Submit">
-      </p>
-
-    </fieldset>
-  </form>
+  </fieldset>
+</form>
 
 </body>
 </html>
